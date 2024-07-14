@@ -57,3 +57,5 @@ history = model.fit(
     epochs=7, #change the epochs number accordingly, for better accuracy
     callbacks=[early_stopping, reduce_lr]
 )
+#saving the model
+model.save('model_name.h5')
