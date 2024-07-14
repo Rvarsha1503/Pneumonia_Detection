@@ -19,7 +19,7 @@ The Pneumonia Detection System is a deep learning-based web application designed
 
 ## Dataset
 
-The dataset used for training and testing the model can be downloaded from [Dataset Link]([insert_dataset_link_here](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)).
+The dataset used for training and testing the model can be downloaded from [Dataset Link](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 
 ## Installation
 
