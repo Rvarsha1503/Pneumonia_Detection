@@ -30,6 +30,7 @@ The dataset used for training and testing the model can be downloaded from [Data
    ```
 
 2. Install dependencies:
+   For Model training:
    ```
     pip install tensorflow
 
@@ -42,7 +43,27 @@ The dataset used for training and testing the model can be downloaded from [Data
    from tensorflow.keras.preprocessing.image import ImageDataGenerator
    from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
    ```
+   ---
+   For app.py :
+   ```
+   Flask==2.0.2
+   tensorflow==2.7.0
+   numpy==1.22.0
+   Flask-Mail==0.9.1
 
+   ```
+   ```
+   from flask import Flask, request, jsonify, render_template, redirect, url_for
+   import os
+   from tensorflow.keras.models import load_model
+   from tensorflow.keras.preprocessing.image import load_img, img_to_array
+   import numpy as np
+   from flask import redirect, flash
+   import smtplib
+   from email.mime.text import MIMEText
+   import re
+   import csv
+   ```
 ## Usage
 
 1. **Training:**
