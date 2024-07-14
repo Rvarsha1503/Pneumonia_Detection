@@ -10,7 +10,7 @@ import re
 import csv
 
 app = Flask(__name__)
-secret_key = 'your_secret_key'
+
 
 # Define responses based on keywords
 
@@ -38,7 +38,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Load the model and define the class labels
-model = load_model('our_model3.h5')
+model = load_model('model_name.h5')
 class_labels = [ 'Normal', 'Pneumonia'] 
 
 def predict_image(image_path):
